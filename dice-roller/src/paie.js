@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Marquee from "react-fast-marquee";
 
 export default function Play(){
 
@@ -62,14 +63,9 @@ export default function Play(){
               
             </div>
             <div id="logo" className="text-center" hidden>
-                <marquee className="text-info">Attend daily morning yoga timing (6.15am to 7.30 am)  <i class="bi bi-emoji-smile text-warning"> keep smiling</i></marquee>
-                <img src="favicon.ico"/>
+                <Marquee className="text-info"> register yes+ workshop <i class="bi bi-emoji-smile text-warning"> keep smiling</i></Marquee>
+                <img src="favicon.ico" alt="paie cell"/>
               </div>
-
-         
-
-
-
         </div>
         
         
