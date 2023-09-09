@@ -2,3 +2,8 @@
   border: solid 40px #008b8b;
   height: 100vh;
 }
+.images img{
+  height: 50px;
+  margin: 5px;
+  width :auto;
+}

@@ -14,15 +14,15 @@ export default function Play(){
       useEffect(()=>{
        if(localStorage.games_played >111){
       document.getElementById("Dice").disabled= true;
+      document.getElementById("images").hidden = true;
+      document.getElementById("logo").hidden = false;
           }
       },[])
     const clicked = ()=>{
         setvalue(Math.floor(Math.random() * (6 - 0)) + 1);
         document.getElementById("Dice").disabled= true;
         document.getElementById("follow").hidden= false;
-        if(value == 4){
-            document.getElementById("images").hidden=false;
-        }
+       
         localStorage.setItem("games_played",(!localStorage.games_played)? parseInt(1):parseInt(localStorage.games_played + 1));
       
     }
@@ -50,7 +50,7 @@ export default function Play(){
             </div>
 
            
-            <div className="images" id="images" hidden>
+            <div className="images" id="images">
               <div className="d-flex flex-wrap">
                 <img  src="https://i0.wp.com/meditativemind.org/wp-content/uploads/2018/09/Easy_yoga_Asanas_to_de-stress_for_beginners.jpg" alt="tree pose"/>
                 <img  src="https://femina.wwmindia.com/content/2020/may/sukhasana51589259840.jpg" alt="sukhasana"/>
@@ -59,7 +59,12 @@ export default function Play(){
                 <img  src="https://spandanspondylosis.com/wp-content/uploads/2023/02/Untitled-1-1024x691.png" alt="pose5"/>
                 <img src="https://store.jiva.com/wp-content/uploads/2019/05/Disease_-_41._Yoga_Poses_To_Keep_1.jpg" alt="poornapavanmukhtaasan"/>
               </div>
+              
             </div>
+            <div id="logo" className="text-center" hidden>
+                <marquee className="text-info">Attend daily morning yoga timing (6.15am to 7.30 am)  <i class="bi bi-emoji-smile text-warning"> keep smiling</i></marquee>
+                <img src="favicon.ico"/>
+              </div>
 
          
 
