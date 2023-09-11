@@ -64,7 +64,7 @@ export default function Play(){
             </div>
             <div id="logo" className="text-center" hidden>
                 <Marquee className="text-info"> register yes+ workshop  <i class="bi bi-emoji-smile text-warning"> keep smiling</i></Marquee>
-               <a href="https://www.artofliving.online/registration.php?event_id=734850"> <button className="btn btn-outline-primary">join now</button></a>
+               <a href="https://www.artofliving.online/registration.php?event_id=734850"> <button className="btn btn-outline-success">register now</button></a><br/>
                 <img src="favicon.ico" alt="paie cell"/>
               </div>
         </div>
